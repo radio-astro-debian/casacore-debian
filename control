@@ -1,0 +1,34 @@
+Source: casacore
+Priority: extra
+Maintainer: Gijs Molenaar <gijs@pythonic.nl>
+Build-Depends: debhelper (>= 8.0.0), cmake, flex,
+ bison, libblas-dev, liblapack-dev, libcfitsio3-dev,
+ wcslib-dev, libfftw3-dev, libreadline6-dev, quilt,
+ gfortran
+Standards-Version: 3.9.2
+Section: libs
+Homepage: http://code.google.com/p/casacore/
+
+Package: libcasacore-dev
+Section: libdevel
+Architecture: any
+Depends: libcasacore0 (= ${binary:Version})
+Description: A set of libraries derived from aips++
+ This project contains c++ libraries which were the
+ code of the discontinued aips++ package.
+
+Package: casacore
+Section: libdevel
+Architecture: any
+Depends: libcasacore0 (= ${binary:Version})
+Description: A set of libraries derived from aips++
+ This project contains c++ libraries which were the
+ code of the discontinued aips++ package.
+
+Package: libcasacore0
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A set of libraries derived from aips++
+ This project contains c++ libraries which were the
+ code of the discontinued aips++ package.
