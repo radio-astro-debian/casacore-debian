@@ -9,16 +9,19 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-
 CMAKE_FLAGS = \
-	-DUSE_FFTW3=OFF \
-	-DBUILD_TESTING=OFF
-
+	-DUSE_FFTW3=ON \
+	-DBUILD_TESTING=OFF \
+	-DDATA_DIR=/usr/share/casacore/data \
+	-DUSE_OPENMP=ON
 
 %:
 	dh $@ --buildsystem=cmake --parallel --with quilt
 
-
 override_dh_auto_configure:
 	dh_auto_configure -- $(CMAKE_FLAGS)
+
+override_dh_clean:
+	rm -rf doc/
+	dh_clean
 

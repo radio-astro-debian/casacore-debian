@@ -1,1 +1,3 @@
-usr/include/*
+usr/include/casacore
+usr/lib/libcasa_*.so
+
