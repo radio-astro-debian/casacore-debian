@@ -1,3 +1,15 @@
+casacore (1.5.0+svn21388-1raring) raring; urgency=low
+
+  * add raring release
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Tue, 10 Sep 2013 18:12:40 +0200
+
+casacore (1.5.0+svn21388-1) precise; urgency=low
+
+  * add deb release version
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Tue, 10 Sep 2013 16:14:50 +0200
+
 casacore (1.5.0+svn21388) precise; urgency=low
 
   * new trunk snapshot
