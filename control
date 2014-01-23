@@ -3,7 +3,7 @@ Priority: extra
 Maintainer: Gijs Molenaar <gijs@pythonic.nl>
 Build-Depends: debhelper (>= 8.0.0), cmake, flex,
  bison, libblas-dev, liblapack-dev, libcfitsio3-dev,
- wcslib-dev, libfftw3-dev, quilt, gfortran,
+ wcslib-dev, libfftw3-dev, gfortran,
  libreadline6-dev|libreadline-gplv2-dev,
  casacore-data
 Standards-Version: 3.9.2
