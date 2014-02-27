@@ -1,7 +1,8 @@
-these are the debian package files for casacore.
+these are the debian package files for casacasacore.
 
-casacore can be found here::
+casacasacore is a fork of casacore, used by casa:
 
+    http://casa.nrao.edu/
    http://code.google.com/p/casacore
 
 These packages are put in the SKA PPA::
