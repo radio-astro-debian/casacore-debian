@@ -13,7 +13,7 @@ Homepage: http://code.google.com/p/casacore/
 Package: libcasacore-dev
 Section: libdevel
 Architecture: any
-Depends: libcasacore1 (= ${binary:Version})
+Depends: libcasacore1 (= ${binary:Version}), wcslib-dev
 Description: A set of libraries derived from aips++
  This project contains c++ libraries which were the
  code of the discontinued aips++ package.
