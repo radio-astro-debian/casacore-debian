@@ -1,0 +1,24 @@
+Description: fix path to data
+
+--- casacasacore-1.0.227.orig/measures/Measures/MeasTable.cc
++++ casacasacore-1.0.227/measures/Measures/MeasTable.cc
+@@ -55,7 +55,7 @@
+ namespace casa { //# NAMESPACE CASA - BEGIN
+ 
+ #ifndef CASADATA
+-#define CASADATA "/usr/local"
++#define CASADATA "/usr/share/casacore/data"
+ #endif
+ 
+ 
+--- casacasacore-1.0.227.orig/measures/Measures/MeasIERS.cc
++++ casacasacore-1.0.227/measures/Measures/MeasIERS.cc
+@@ -42,7 +42,7 @@
+ namespace casa { //# NAMESPACE CASA - BEGIN
+ 
+ #ifndef CASADATA
+-#define CASADATA "/usr/local"
++#define CASADATA "/usr/share/casacore/data"
+ #endif
+ 
+ //# Constants

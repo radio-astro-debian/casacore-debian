@@ -5,7 +5,7 @@ Build-Depends: debhelper (>= 8.0.0), cmake, flex,
  bison, libblas-dev, liblapack-dev, libcfitsio3-dev,
  wcslib-dev, libfftw3-dev, gfortran, libgsl0-dev,
  libreadline6-dev|libreadline-gplv2-dev,
- casacore-data
+ casacore-data, quilt
 Standards-Version: 3.9.2
 Section: libs
 Homepage: http://code.google.com/p/casacore/

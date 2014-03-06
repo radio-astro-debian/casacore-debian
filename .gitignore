@@ -1,1 +1,7 @@
 *.log
+*.substvars
+files
+casacasacore/
+libcasacasacore-dev/
+libcasacasacore1/
+tmp/

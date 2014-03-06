@@ -1,3 +1,9 @@
+casacasacore (1.0.227-2precise1) precise; urgency=low
+
+  * old casacore don't know DATA_DIR, so force set
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Thu, 06 Mar 2014 13:25:43 +0000
+
 casacasacore (1.0.227-1precise1) precise; urgency=low
 
   * initial release
