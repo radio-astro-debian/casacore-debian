@@ -1,1 +1,4 @@
 *.log
+*.substvars
+casacore1.3-static/
+files

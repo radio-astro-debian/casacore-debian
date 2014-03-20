@@ -1,4 +1,4 @@
-Source: casacore
+Source: casacore1.3
 Priority: extra
 Maintainer: Gijs Molenaar <gijs@pythonic.nl>
 Build-Depends: debhelper (>= 8.0.0), cmake, flex,
@@ -7,29 +7,15 @@ Build-Depends: debhelper (>= 8.0.0), cmake, flex,
  libreadline6-dev|libreadline-gplv2-dev,
  casacore-data
 Standards-Version: 3.9.2
-Section: libs
+Section: science
 Homepage: http://code.google.com/p/casacore/
 
-Package: libcasacore-dev
-Section: libdevel
+Package: casacore1.3-static
+Section: science
 Architecture: any
-Depends: libcasacore1 (= ${binary:Version}), wcslib-dev
-Description: A set of libraries derived from aips++
- This project contains c++ libraries which were the
- code of the discontinued aips++ package.
-
-Package: casacore
-Section: libdevel
-Architecture: any
-Depends: libcasacore1 (= ${binary:Version})
-Description: A set of libraries derived from aips++
- This project contains c++ libraries which were the
- code of the discontinued aips++ package.
-
-Package: libcasacore1
-Section: libs
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, wcslib-dev
+Conflicts: casacore, libcasacore-dev, libcasacore1, casasacore,
+ libcasacasacore-dev, libcasacasacore1
 Description: A set of libraries derived from aips++
  This project contains c++ libraries which were the
  code of the discontinued aips++ package.
