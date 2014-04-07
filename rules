@@ -13,7 +13,9 @@ CMAKE_FLAGS = \
 	-DDATA_DIR=/usr/share/casacore/data \
 	-DUSE_OPENMP=ON \
 	-DBUILD_SHARED_LIBS=0 \
-	-DUSE_HDF5=OFF
+	-DUSE_HDF5=OFF \
+	-DCMAKE_CXX_COMPILER=g++-4.6 \
+	-DCMAKE_C_COMPILER=gcc-4.6
 
 %:
 	dh $@ --buildsystem=cmake --parallel
