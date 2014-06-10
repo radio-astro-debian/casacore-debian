@@ -1,3 +1,9 @@
+casacore (1.7.0-1precise) precise; urgency=medium
+
+  * new upstream release
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Tue, 10 Jun 2014 17:00:05 +0200
+
 casacore (1.5.0+svn21411-2precise1) precise; urgency=low
 
   * add wcslib-dev dependency to libcasacore-dev
