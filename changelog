@@ -1,3 +1,9 @@
+casacore (1.7.0-1trusty) trusty; urgency=medium
+
+  * new upstream release
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Tue, 10 Jun 2014 16:30:07 +0200
+
 casacore (1.5.0+svn21423-1trusty) trusty; urgency=low
 
   * new upstream release
