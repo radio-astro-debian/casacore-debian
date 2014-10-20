@@ -8,7 +8,8 @@ CMAKE_FLAGS = \
 	-DUSE_FFTW3=ON \
 	-DBUILD_TESTING=OFF \
 	-DDATA_DIR=/usr/share/casacore/data \
-	-DUSE_OPENMP=ON
+	-DUSE_OPENMP=ON \
+    -DUSE_HDF5=ON
 
 %:
 	dh $@ --buildsystem=cmake --parallel
