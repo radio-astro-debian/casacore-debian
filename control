@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 8.0.0), cmake, flex,
  libreadline6-dev | libreadline-gplv2-dev,
  casacore-data, libhdf5-dev | libhdf5-mpi-dev |
  libhdf5-mpich2-dev | libhdf5-openmpi-dev |
- libhdf5-serial-dev
+ libhdf5-serial-dev, python-numpy, libboost-python-dev
 Standards-Version: 3.9.2
 Section: libs
 Homepage: http://code.google.com/p/casacore/

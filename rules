@@ -9,7 +9,8 @@ CMAKE_FLAGS = \
 	-DBUILD_TESTING=OFF \
 	-DDATA_DIR=/usr/share/casacore/data \
 	-DUSE_OPENMP=ON \
-    -DUSE_HDF5=ON
+    -DUSE_HDF5=ON \
+	-DBUILD_PYTHON=ON
 
 %:
 	dh $@ --buildsystem=cmake --parallel
