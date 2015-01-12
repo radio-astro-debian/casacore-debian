@@ -1,4 +1,4 @@
-Source: casacasacore
+Source: casa-casacore
 Priority: extra
 Maintainer: Gijs Molenaar <gijs@pythonic.nl>
 Build-Depends: debhelper (>= 8.0.0), cmake, flex,
@@ -10,25 +10,25 @@ Standards-Version: 3.9.2
 Section: libs
 Homepage: http://code.google.com/p/casacore/
 
-Package: libcasacasacore-dev
+Package: libcasa-casacore-dev
 Section: libdevel
 Architecture: any
-Depends: libcasacasacore1 (= ${binary:Version})
+Depends: libcasa-casacore1 (= ${binary:Version})
 Conflicts: libcasacore-dev
 Description: A set of libraries derived from aips++
  This project contains c++ libraries which were the
  code of the discontinued aips++ package.
 
-Package: casacasacore
+Package: casa-casacore
 Section: libdevel
 Architecture: any
-Depends: libcasacasacore1 (= ${binary:Version})
+Depends: libcasa-casacore1 (= ${binary:Version})
 Conflicts: casacore
 Description: A set of libraries derived from aips++
  This project contains c++ libraries which were the
  code of the discontinued aips++ package.
 
-Package: libcasacasacore1
+Package: libcasa-casacore1
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}

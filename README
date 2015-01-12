@@ -1,12 +1,12 @@
-these are the debian package files for casacasacore.
+these are the debian package files for casa-casacore.
 
-casacasacore is a fork of casacore, used by casa:
+casa-casacore is a fork of casacore, used by casa:
 
     http://casa.nrao.edu/
    http://code.google.com/p/casacore
 
-These packages are put in the SKA PPA::
+These packages are put in the radio astronomy PPA::
 
-   https://launchpad.net/~ska-sa
+   https://launchpad.net/~radio-astro
 
 

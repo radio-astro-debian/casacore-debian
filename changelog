@@ -1,3 +1,9 @@
+casa-casacore (4.2.2-1trusty) trusty; urgency=medium
+
+  * new upstream release
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Mon, 12 Jan 2015 14:52:15 +0100
+
 casacasacore (1.0.227-2precise1) precise; urgency=low
 
   * old casacore don't know DATA_DIR, so force set
