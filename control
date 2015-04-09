@@ -2,8 +2,8 @@ Source: casacore
 Priority: extra
 Maintainer: Gijs Molenaar <gijs@pythonic.nl>
 Build-Depends: debhelper (>= 8.0.0), cmake, flex,
- bison, libblas-dev, liblapack-dev, libcfitsio3-dev,
- wcslib-dev, libfftw3-dev, gfortran, libncurses5-dev,
+ bison, libblas-dev, liblapack-dev, libcfitsio3-dev (>= 3.181),
+ wcslib-dev (>= 4.20), libfftw3-dev, gfortran, libncurses5-dev,
  libreadline6-dev | libreadline-gplv2-dev,
  casacore-data, libhdf5-dev | libhdf5-mpi-dev |
  libhdf5-mpich2-dev | libhdf5-openmpi-dev |
@@ -12,7 +12,7 @@ Standards-Version: 3.9.2
 Section: libs
 Homepage: http://code.google.com/p/casacore/
 
-Package: libcasacore-dev
+Package: libcasacore2-dev
 Section: libdevel
 Architecture: any
 Depends: libcasacore1 (= ${binary:Version}), wcslib-dev
@@ -20,7 +20,7 @@ Description: A set of libraries derived from aips++
  This project contains c++ libraries which were the
  code of the discontinued aips++ package.
 
-Package: casacore
+Package: casacore2
 Section: libdevel
 Architecture: any
 Depends: libcasacore1 (= ${binary:Version})
@@ -28,7 +28,7 @@ Description: A set of libraries derived from aips++
  This project contains c++ libraries which were the
  code of the discontinued aips++ package.
 
-Package: libcasacore1
+Package: libcasacore2
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}

@@ -2,7 +2,7 @@
 *.substvars
 *.debhelper
 files
-casacore/
-libcasacore-dev/
-libcasacore1/
+casacore2/
+libcasacore2-dev/
+libcasacore2/
 tmp/
