@@ -1,8 +1,14 @@
-casacore (2.0.0-1trusty) trusty; urgency=medium
+casacore (2.0.0-2precise) precise; urgency=medium
 
-  * new upstream release
+  * no libhdf5-dev in precise
 
- -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Thu, 09 Apr 2015 13:43:09 +0200
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Thu, 09 Apr 2015 15:52:27 +0200
+
+casacore (2.0.0-1precise) precise; urgency=medium
+
+  *  new upstream release
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Thu, 09 Apr 2015 15:34:01 +0200
 
 casacore (2.0.0~svn21490-2trusty) trusty; urgency=low
 
