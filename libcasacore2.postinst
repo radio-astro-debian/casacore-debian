@@ -1,0 +1,15 @@
+#!/bin/sh 
+# libcasacore2.postinst, runs ldconfig 
+set -e 
+ 
+case "$1" in 
+       configure) 
+               echo "running ldconfig..."
+               ldconfig 
+               ;; 
+       abort-upgrade|abort-remove|abort-deconfigure) 
+               ;; 
+esac 
+ 
+ 
+#DEBHELPER#
