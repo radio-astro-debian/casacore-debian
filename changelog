@@ -1,3 +1,9 @@
+casacore (1.7.0-2vivid) vivid; urgency=medium
+
+  * compile for vivid
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Tue, 26 May 2015 11:50:14 +0200
+
 casacore (1.7.0-2trusty) trusty; urgency=medium
 
   * enable HDF5
