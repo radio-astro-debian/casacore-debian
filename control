@@ -16,6 +16,7 @@ Package: libcasacore2-dev
 Section: libdevel
 Architecture: any
 Depends: libcasacore2 (= ${binary:Version}), wcslib-dev
+Conflicts: libcasacore-dev
 Description: A set of libraries derived from aips++
  This project contains c++ libraries which were the
  code of the discontinued aips++ package.
@@ -24,6 +25,7 @@ Package: casacore2
 Section: libdevel
 Architecture: any
 Depends: libcasacore2 (= ${binary:Version})
+Conflicts: casacore
 Description: A set of libraries derived from aips++
  This project contains c++ libraries which were the
  code of the discontinued aips++ package.

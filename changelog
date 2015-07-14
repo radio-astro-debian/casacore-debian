@@ -1,3 +1,9 @@
+casacore (2.0.1-2trusty) trusty; urgency=medium
+
+  * add conflict with old casacore dev package
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Tue, 14 Jul 2015 16:15:13 +0200
+
 casacore (2.0.0-1trusty) trusty; urgency=medium
 
   * new upstream release
