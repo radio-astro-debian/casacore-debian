@@ -5,9 +5,7 @@ Build-Depends: debhelper (>= 8.0.0), cmake, flex,
  bison, libblas-dev, liblapack-dev, libcfitsio3-dev (>= 3.181),
  wcslib-dev (>= 4.20), libfftw3-dev, gfortran, libncurses5-dev,
  libreadline6-dev | libreadline-gplv2-dev,
- casacore-data, libhdf5-mpi-dev | libhdf5-lam-dev |
- libhdf5-mpich-dev | libhdf5-openmpi-dev |
- libhdf5-serial-dev, python-numpy, libboost-python-dev
+ casacore-data, libhdf5-serial-dev, python-numpy, libboost-python-dev, libopenmpi-dev
 Standards-Version: 3.9.2
 Section: libs
 Homepage: http://code.google.com/p/casacore/
@@ -16,6 +14,7 @@ Package: libcasacore2-dev
 Section: libdevel
 Architecture: any
 Depends: libcasacore2 (= ${binary:Version}), wcslib-dev
+Conflicts: libcasacore-dev
 Description: A set of libraries derived from aips++
  This project contains c++ libraries which were the
  code of the discontinued aips++ package.
@@ -24,6 +23,7 @@ Package: casacore2
 Section: libdevel
 Architecture: any
 Depends: libcasacore2 (= ${binary:Version})
+Conflicts: casacore
 Description: A set of libraries derived from aips++
  This project contains c++ libraries which were the
  code of the discontinued aips++ package.
@@ -35,3 +35,4 @@ Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: A set of libraries derived from aips++
  This project contains c++ libraries which were the
  code of the discontinued aips++ package.
+

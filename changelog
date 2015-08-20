@@ -1,3 +1,9 @@
+casacore (2.0.3-3precise) precise; urgency=medium
+
+  * try to fix build
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Thu, 20 Aug 2015 12:08:55 +0200
+
 casacore (2.0.0-2precise) precise; urgency=medium
 
   * no libhdf5-dev in precise
