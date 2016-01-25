@@ -1,10 +1,9 @@
 Format: http://dep.debian.net/deps/dep5
 Upstream-Name: casacore
-Source: <url://example.com>
+Source: https://github.com/casacore/casacore
 
 Files: *
-Copyright: <years> <put author's name and email here>
-           <years> <likewise for another author>
+Copyright: 1997-2015 Ger van Diepen <diepen@astron.nl>
 License: GPL-2.0+
 
 Files: debian/*

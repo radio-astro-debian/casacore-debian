@@ -2,12 +2,9 @@ these are the debian package files for casacore.
 
 casacore can be found here::
 
-   http://code.google.com/p/casacore
+https://github.com/casacore/casacore
 
-These packages are put in the radio astronomy ubuntu PPA repository::
+These packages are put in the radio astronomy PPA::
 
-   https://launchpad.net/~radio-astro
+https://launchpad.net/~radio-astro/+archive/ubuntu/main
 
-packaging related issues should be reported here
-
-https://github.com/radio-astro/packaging
