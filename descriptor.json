@@ -1,0 +1,22 @@
+{
+    "package": {
+        "name": "casacore2",
+        "repo": "main",
+        "subject": "radio-astro"
+    },
+
+    "version": {
+        "name": "2.0.3",
+        "gpgSign": true
+    },
+    "files":
+    [{"includePattern": "./(casacore.*\\.deb$)", "uploadPattern": "$1",
+        "matrixParams": {
+            "deb_distribution": "stable",
+            "deb_component": "main",
+            "deb_architecture": "amd64",
+              "publish": "1"
+        }
+    }
+    ]
+}

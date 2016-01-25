@@ -1,0 +1,5 @@
+casacore (1.7.0-2trusty) stable; urgency=medium
+
+  * autobuild using travis 
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Mon, 20 Oct 2014 12:34:45 +0000

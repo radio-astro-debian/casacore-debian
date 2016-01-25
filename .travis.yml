@@ -1,0 +1,33 @@
+language: generic
+sudo: true
+dist: trusty
+env:
+  global:
+  - VERSION=2.0.3
+  - REVISION=0
+install:
+- sudo apt-get update
+- sudo apt-get install -yq software-properties-common
+- sudo add-apt-repository "deb http://us-central1.gce.clouds.archive.ubuntu.com/ubuntu
+  $(lsb_release -sc) main universe restricted multiverse"
+- sudo add-apt-repository -y ppa:radio-astro/main
+- sudo apt-get update
+- sudo apt-get install -yq debhelper build-essential cmake flex bison libblas-dev
+  liblapack-dev libcfitsio3-dev wcslib-dev libfftw3-dev gfortran libncurses5-dev libreadline6-dev
+  casacore-data libhdf5-dev
+script:
+- curl -L -O casacore_$VERSION.orig.tar.gz https://github.com/casacore/casacore/archive/v$VERSION.tar.gz
+- tar zxvpf v$VERSION.tar.gz
+- cd casacore-$VERSION
+- cp -av ../debian .
+- dch -v ${VERSION}-${REVISION} -D stable "auto build"
+- dpkg-buildpackage
+- cd ..
+deploy:
+  provider: bintray
+  file: descriptor.json
+  skip_cleanup: true
+  user: gijzelaerr
+  key:
+    secure: sQsbZpsvlPd7XLf7pALmWJmNLX6+9Q0QWBDmNxDznEOsMLlbWaQ88m83MWWzM9g0G9xUg832FDoWrjElqB8qpvC2y5PFlNUskCSsVLLx5IIflanQ+msTt4OPEl1WteULSzcpI+HXfgxCwCAvDB+ajGgDOzqY8AXGEMKy1/3oMeM=
+  on: bintray
