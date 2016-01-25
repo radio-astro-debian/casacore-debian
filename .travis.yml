@@ -17,7 +17,7 @@ install:
   casacore-data libhdf5-dev
 script:
 - curl -L -o casacore_$VERSION.orig.tar.gz https://github.com/casacore/casacore/archive/v$VERSION.tar.gz
-- tar zxvpf v$VERSION.tar.gz
+- tar zxvpf casacore_$VERSION.orig.tar.gz
 - cd casacore-$VERSION
 - cp -av ../debian .
 - dch -v ${VERSION}-${REVISION} -D stable "auto build"
