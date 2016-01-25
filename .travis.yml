@@ -32,5 +32,5 @@ deploy:
   skip_cleanup: true
   user: gijzelaerr
   key:
-    secure: sQsbZpsvlPd7XLf7pALmWJmNLX6+9Q0QWBDmNxDznEOsMLlbWaQ88m83MWWzM9g0G9xUg832FDoWrjElqB8qpvC2y5PFlNUskCSsVLLx5IIflanQ+msTt4OPEl1WteULSzcpI+HXfgxCwCAvDB+ajGgDOzqY8AXGEMKy1/3oMeM=
+    secure: ketQWlyfbUqcdnDi0fC4DZz5zTL7t7IwR3oRD3/wdeMLUCYsDbgT4I/U/XLNN8buXJrCpF/sVh/u0JtdHigdlcxu1LoleI/beqYwCZRvE2GCNhVS5lopN4Bn+inVF7Pw3rSWdCrxw0T9y60d9i2RzPRaF1jOViFW7RVrLwrPN9E=
   on: bintray
