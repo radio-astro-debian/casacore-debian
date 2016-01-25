@@ -3,6 +3,7 @@ sudo: true
 dist: trusty
 env:
   global:
+  - DEB_BUILD_OPTIONS='parallel=5'
   - VERSION=2.0.3
   - REVISION=0
 install:
@@ -21,8 +22,10 @@ script:
 - cd casacore-$VERSION
 - cp -av ../debian .
 - dch -v ${VERSION}-${REVISION} -D stable "auto build"
-- dpkg-buildpackage
+- dpkg-buildpackage -us -uc
 - cd ..
+before_deploy:
+- ls *.deb
 deploy:
   provider: bintray
   file: descriptor.json

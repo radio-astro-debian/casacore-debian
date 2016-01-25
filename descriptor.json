@@ -10,7 +10,7 @@
         "gpgSign": true
     },
     "files":
-    [{"includePattern": "./(casacore.*\\.deb$)", "uploadPattern": "$1",
+    [{"includePattern": "./(.*\\.deb$)", "uploadPattern": "$1",
         "matrixParams": {
             "deb_distribution": "stable",
             "deb_component": "main",
