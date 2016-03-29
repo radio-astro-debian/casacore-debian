@@ -1,4 +1,4 @@
-Source: casacore
+Source: casacore21
 Priority: extra
 Maintainer: Gijs Molenaar <gijs@pythonic.nl>
 Build-Depends: debhelper (>= 8.0.0), cmake, flex,
@@ -7,30 +7,34 @@ Build-Depends: debhelper (>= 8.0.0), cmake, flex,
  libreadline6-dev | libreadline-gplv2-dev,
  casacore-data, libhdf5-dev | libhdf5-mpi-dev |
  libhdf5-mpich2-dev | libhdf5-openmpi-dev |
- libhdf5-serial-dev, python-numpy, libboost-python-dev
+ libhdf5-serial-dev, python-numpy, python3-numpy, libboost-python-dev,
+ python-dev, python3-dev
 Standards-Version: 3.9.2
 Section: libs
 Homepage: http://code.google.com/p/casacore/
 
-Package: libcasacore2-dev
+Package: libcasacore21-dev
 Section: libdevel
 Architecture: any
-Depends: libcasacore2 (= ${binary:Version}), wcslib-dev
+Depends: libcasacore21 (= ${binary:Version}), wcslib-dev
+Conflicts: casacore2-dev
 Description: A set of libraries derived from aips++
  This project contains c++ libraries which were the
  code of the discontinued aips++ package.
 
-Package: casacore2
+Package: casacore21
 Section: libdevel
 Architecture: any
-Depends: libcasacore2 (= ${binary:Version})
+Depends: libcasacore21 (= ${binary:Version})
+Conflicts: casacore21
 Description: A set of libraries derived from aips++
  This project contains c++ libraries which were the
  code of the discontinued aips++ package.
 
-Package: libcasacore2
+Package: libcasacore21
 Section: libs
 Architecture: any
+Conflicts: casacore2
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: A set of libraries derived from aips++
  This project contains c++ libraries which were the
