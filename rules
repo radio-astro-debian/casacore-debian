@@ -4,6 +4,7 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+
 CMAKE_FLAGS = \
 	-DUSE_FFTW3=ON \
 	-DBUILD_TESTING=OFF \
@@ -23,3 +24,5 @@ override_dh_clean:
 	rm -rf doc/
 	dh_clean
 
+override_dh_strip:
+		dh_strip --dbg-package=libcasacore2-dbg

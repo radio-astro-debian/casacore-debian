@@ -5,4 +5,5 @@ files
 casacore2/
 libcasacore2-dev/
 libcasacore2/
+libcasacore2-dbg/
 tmp/

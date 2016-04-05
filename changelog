@@ -1,3 +1,9 @@
+casacore (2.0.3-3trusty) trusty; urgency=medium
+
+  * add debug package
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Tue, 05 Apr 2016 17:52:51 +0200
+
 casacore (2.0.3-2trusty) trusty; urgency=medium
 
   * New upstream release

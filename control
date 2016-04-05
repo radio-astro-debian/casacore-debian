@@ -36,3 +36,15 @@ Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: A set of libraries derived from aips++
  This project contains c++ libraries which were the
  code of the discontinued aips++ package.
+
+Package: libcasacore2-dbg
+Section: debug
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A set of libraries derived from aips++
+ This project contains c++ libraries which were the
+ code of the discontinued aips++ package.
+ .
+ This package contains the debugging symbols for giblib1.
+
