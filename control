@@ -25,7 +25,6 @@ Package: casacore2
 Section: libdevel
 Architecture: any
 Depends: libcasacore2 (= ${binary:Version})
-Conflicts: casacore
 Description: A set of libraries derived from aips++
  This project contains c++ libraries which were the
  code of the discontinued aips++ package.
